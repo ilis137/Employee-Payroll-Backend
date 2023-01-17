@@ -1,0 +1,13 @@
+package com.employeepayrollapp;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class EmployeePayrollAppBackendApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(EmployeePayrollAppBackendApplication.class, args);
+    }
+
+}
