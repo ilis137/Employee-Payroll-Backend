@@ -9,7 +9,7 @@ import lombok.*;
 @NoArgsConstructor
 @Data
 public class EmployeePayrollData {
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private long employeeId;
     @NonNull

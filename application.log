@@ -1,31 +1,89 @@
-2023-01-18T20:40:48.691+05:30  INFO 13152 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Starting EmployeePayrollAppBackendApplication using Java 18.0.2.1 with PID 13152 (E:\brglabz\CFP\Employee payroll app - backend\build\classes\java\main started by iliya in E:\brglabz\CFP\Employee payroll app - backend)
-2023-01-18T20:40:48.745+05:30 DEBUG 13152 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Running with Spring Boot v3.0.1, Spring v6.0.3
-2023-01-18T20:40:48.746+05:30  INFO 13152 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : The following 1 profile is active: "dev"
-2023-01-18T20:41:07.752+05:30  WARN 13152 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-01-18T20:41:08.144+05:30  INFO 13152 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Started EmployeePayrollAppBackendApplication in 20.96 seconds (process running for 32.711)
-2023-01-18T20:41:08.148+05:30  INFO 13152 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll App Started in DEV Environment
-2023-01-18T20:41:08.149+05:30  INFO 13152 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll DB User is root Environment
-2023-01-18T20:44:35.220+05:30  INFO 7876 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Starting EmployeePayrollAppBackendApplication using Java 18.0.2.1 with PID 7876 (E:\brglabz\CFP\Employee payroll app - backend\build\classes\java\main started by iliya in E:\brglabz\CFP\Employee payroll app - backend)
-2023-01-18T20:44:35.222+05:30 DEBUG 7876 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Running with Spring Boot v3.0.1, Spring v6.0.3
-2023-01-18T20:44:35.223+05:30  INFO 7876 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : The following 1 profile is active: "dev"
-2023-01-18T20:44:39.332+05:30  WARN 7876 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-01-18T20:44:39.775+05:30  INFO 7876 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Started EmployeePayrollAppBackendApplication in 5.098 seconds (process running for 6.205)
-2023-01-18T20:44:39.780+05:30  INFO 7876 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll App Started in DEV Environment
-2023-01-18T20:44:39.783+05:30  INFO 7876 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll DB User is root Environment
-2023-01-18T20:50:41.764+05:30  INFO 11300 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Starting EmployeePayrollAppBackendApplication using Java 18.0.2.1 with PID 11300 (E:\brglabz\CFP\Employee payroll app - backend\build\classes\java\main started by iliya in E:\brglabz\CFP\Employee payroll app - backend)
-2023-01-18T20:50:41.774+05:30 DEBUG 11300 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Running with Spring Boot v3.0.1, Spring v6.0.3
-2023-01-18T20:50:41.776+05:30  INFO 11300 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : The following 1 profile is active: "dev"
-2023-01-18T20:51:21.748+05:30  WARN 11300 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-01-18T20:51:23.498+05:30  INFO 11300 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Started EmployeePayrollAppBackendApplication in 42.325 seconds (process running for 43.183)
-2023-01-18T20:51:23.503+05:30  INFO 11300 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll App Started in DEV Environment
-2023-01-18T20:51:23.506+05:30  INFO 11300 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll DB User is root Environment
-2023-01-18T20:51:28.379+05:30 DEBUG 11300 --- [http-nio-8080-exec-1] c.e.Services.EmployeePayrollService      : EmployeePayrollData(employeeId=152, name=amit, salary=20000)
-2023-01-18T20:52:50.856+05:30 ERROR 11300 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
+2023-01-19T08:18:04.800+05:30  INFO 12928 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Starting EmployeePayrollAppBackendApplication using Java 18.0.2.1 with PID 12928 (E:\brglabz\CFP\Employee payroll app - backend\build\classes\java\main started by iliya in E:\brglabz\CFP\Employee payroll app - backend)
+2023-01-19T08:18:04.906+05:30 DEBUG 12928 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-19T08:18:04.907+05:30  INFO 12928 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : The following 1 profile is active: "dev"
+2023-01-19T08:18:38.420+05:30  WARN 12928 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-19T08:18:40.293+05:30  INFO 12928 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Started EmployeePayrollAppBackendApplication in 40.019 seconds (process running for 74.167)
+2023-01-19T08:18:40.300+05:30  INFO 12928 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll App Started in DEV Environment
+2023-01-19T08:18:40.303+05:30  INFO 12928 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll DB User is root Environment
+2023-01-19T08:24:35.725+05:30 DEBUG 12928 --- [http-nio-8080-exec-1] c.e.Services.EmployeePayrollService      : EmployeePayrollData(employeeId=252, name=il, salary=30000)
+2023-01-19T08:25:41.719+05:30 DEBUG 12928 --- [http-nio-8080-exec-4] c.e.Services.EmployeePayrollService      : EmployeePayrollData(employeeId=253, name=il, salary=30)
+2023-01-19T08:32:50.326+05:30  INFO 2424 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Starting EmployeePayrollAppBackendApplication using Java 18.0.2.1 with PID 2424 (E:\brglabz\CFP\Employee payroll app - backend\build\classes\java\main started by iliya in E:\brglabz\CFP\Employee payroll app - backend)
+2023-01-19T08:32:50.330+05:30 DEBUG 2424 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-19T08:32:50.331+05:30  INFO 2424 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : The following 1 profile is active: "dev"
+2023-01-19T08:32:57.238+05:30  WARN 2424 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-19T08:32:57.792+05:30  INFO 2424 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Started EmployeePayrollAppBackendApplication in 8.869 seconds (process running for 16.968)
+2023-01-19T08:32:57.797+05:30  INFO 2424 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll App Started in DEV Environment
+2023-01-19T08:32:57.798+05:30  INFO 2424 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll DB User is root Environment
+2023-01-19T08:42:38.438+05:30 ERROR 2424 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Field 'employee_id' doesn't have a default value
+2023-01-19T08:42:38.604+05:30 ERROR 2424 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.orm.jpa.JpaSystemException: could not execute statement] with root cause
 
-java.util.NoSuchElementException: No value present
-	at java.base/java.util.Optional.get(Optional.java:143) ~[na:na]
-	at com.employeepayrollapp.Services.EmployeePayrollService.getEmployeePayrollById(EmployeePayrollService.java:31) ~[main/:na]
-	at com.employeepayrollapp.Controllers.EmployeePayrollController.getEmployeePayrollDataById(EmployeePayrollController.java:27) ~[main/:na]
+java.sql.SQLException: Field 'employee_id' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:42) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3327) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3965) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:80) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:653) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:283) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:264) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:340) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:286) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:192) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:122) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:184) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:129) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:53) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:737) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:721) ~[hibernate-core-6.1.6.Final.jar:6.1.6.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:360) ~[spring-orm-6.0.3.jar:6.0.3]
+	at jdk.proxy4/jdk.proxy4.$Proxy102.persist(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:307) ~[spring-orm-6.0.3.jar:6.0.3]
+	at jdk.proxy4/jdk.proxy4.$Proxy102.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:610) ~[spring-data-jpa-3.0.0.jar:3.0.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:288) ~[spring-data-commons-3.0.0.jar:3.0.0]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:136) ~[spring-data-commons-3.0.0.jar:3.0.0]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:120) ~[spring-data-commons-3.0.0.jar:3.0.0]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516) ~[spring-data-commons-3.0.0.jar:3.0.0]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-3.0.0.jar:3.0.0]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628) ~[spring-data-commons-3.0.0.jar:3.0.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.3.jar:6.0.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168) ~[spring-data-commons-3.0.0.jar:3.0.0]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.0.0.jar:3.0.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.3.jar:6.0.3]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:77) ~[spring-data-commons-3.0.0.jar:3.0.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.3.jar:6.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.3.jar:6.0.3]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-6.0.3.jar:6.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.3.jar:6.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.3.jar:6.0.3]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.0.3.jar:6.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.3.jar:6.0.3]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:163) ~[spring-data-jpa-3.0.0.jar:3.0.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.3.jar:6.0.3]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.3.jar:6.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.3.jar:6.0.3]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:218) ~[spring-aop-6.0.3.jar:6.0.3]
+	at jdk.proxy4/jdk.proxy4.$Proxy106.save(Unknown Source) ~[na:na]
+	at com.employeepayrollapp.Services.EmployeePayrollService.createEmployeePayroll(EmployeePayrollService.java:24) ~[main/:na]
+	at com.employeepayrollapp.Controllers.EmployeePayrollController.createEmployeePayroll(EmployeePayrollController.java:34) ~[main/:na]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.3.jar:6.0.3]
@@ -37,8 +95,8 @@ java.util.NoSuchElementException: No value present
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080) ~[spring-webmvc-6.0.3.jar:6.0.3]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973) ~[spring-webmvc-6.0.3.jar:6.0.3]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1010) ~[spring-webmvc-6.0.3.jar:6.0.3]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:902) ~[spring-webmvc-6.0.3.jar:6.0.3]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705) ~[tomcat-embed-core-10.1.4.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:913) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731) ~[tomcat-embed-core-10.1.4.jar:6.0]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:884) ~[spring-webmvc-6.0.3.jar:6.0.3]
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814) ~[tomcat-embed-core-10.1.4.jar:6.0]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
@@ -75,3 +133,30 @@ java.util.NoSuchElementException: No value present
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+2023-01-19T08:44:23.082+05:30  INFO 11928 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Starting EmployeePayrollAppBackendApplication using Java 18.0.2.1 with PID 11928 (E:\brglabz\CFP\Employee payroll app - backend\build\classes\java\main started by iliya in E:\brglabz\CFP\Employee payroll app - backend)
+2023-01-19T08:44:23.085+05:30 DEBUG 11928 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-19T08:44:23.088+05:30  INFO 11928 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : The following 1 profile is active: "dev"
+2023-01-19T08:44:41.146+05:30  WARN 11928 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-19T08:44:43.185+05:30  INFO 11928 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Started EmployeePayrollAppBackendApplication in 22.091 seconds (process running for 50.365)
+2023-01-19T08:44:43.188+05:30  INFO 11928 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll App Started in DEV Environment
+2023-01-19T08:44:43.190+05:30  INFO 11928 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll DB User is root Environment
+2023-01-19T08:47:49.357+05:30  INFO 12812 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Starting EmployeePayrollAppBackendApplication using Java 18.0.2.1 with PID 12812 (E:\brglabz\CFP\Employee payroll app - backend\build\classes\java\main started by iliya in E:\brglabz\CFP\Employee payroll app - backend)
+2023-01-19T08:47:49.359+05:30 DEBUG 12812 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-19T08:47:49.360+05:30  INFO 12812 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : The following 1 profile is active: "dev"
+2023-01-19T08:48:10.809+05:30  WARN 12812 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-19T08:48:11.415+05:30  INFO 12812 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Started EmployeePayrollAppBackendApplication in 23.881 seconds (process running for 27.028)
+2023-01-19T08:48:11.418+05:30  INFO 12812 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll App Started in DEV Environment
+2023-01-19T08:48:11.420+05:30  INFO 12812 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll DB User is root Environment
+2023-01-19T08:50:14.395+05:30 DEBUG 12812 --- [http-nio-8080-exec-2] c.e.Services.EmployeePayrollService      : EmployeePayrollData(employeeId=1, name=il, salary=30)
+2023-01-19T08:50:26.139+05:30 DEBUG 12812 --- [http-nio-8080-exec-3] c.e.Services.EmployeePayrollService      : EmployeePayrollData(employeeId=2, name=iliyas, salary=30000)
+2023-01-19T08:50:36.439+05:30 DEBUG 12812 --- [http-nio-8080-exec-4] c.e.Services.EmployeePayrollService      : EmployeePayrollData(employeeId=3, name=amit, salary=50000)
+2023-01-19T08:51:07.828+05:30 DEBUG 12812 --- [http-nio-8080-exec-5] c.e.Services.EmployeePayrollService      : EmployeePayrollData(employeeId=4, name=amit, salary=50000)
+2023-01-19T08:52:54.604+05:30  INFO 1288 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Starting EmployeePayrollAppBackendApplication using Java 18.0.2.1 with PID 1288 (E:\brglabz\CFP\Employee payroll app - backend\build\classes\java\main started by iliya in E:\brglabz\CFP\Employee payroll app - backend)
+2023-01-19T08:52:54.608+05:30 DEBUG 1288 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-19T08:52:54.609+05:30  INFO 1288 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : The following 1 profile is active: "dev"
+2023-01-19T08:53:00.462+05:30  WARN 1288 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-19T08:53:00.977+05:30  INFO 1288 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Started EmployeePayrollAppBackendApplication in 7.044 seconds (process running for 8.465)
+2023-01-19T08:53:00.982+05:30  INFO 1288 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll App Started in DEV Environment
+2023-01-19T08:53:00.985+05:30  INFO 1288 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll DB User is root Environment
+2023-01-19T08:53:07.507+05:30 DEBUG 1288 --- [http-nio-8080-exec-1] c.e.Services.EmployeePayrollService      : EmployeePayrollData(employeeId=5, name=amit, salary=50000)
+2023-01-19T08:53:15.554+05:30 DEBUG 1288 --- [http-nio-8080-exec-3] c.e.Services.EmployeePayrollService      : EmployeePayrollData(employeeId=6, name=amit, salary=50000)
