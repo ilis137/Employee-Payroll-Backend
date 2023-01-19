@@ -1,0 +1,77 @@
+2023-01-18T20:40:48.691+05:30  INFO 13152 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Starting EmployeePayrollAppBackendApplication using Java 18.0.2.1 with PID 13152 (E:\brglabz\CFP\Employee payroll app - backend\build\classes\java\main started by iliya in E:\brglabz\CFP\Employee payroll app - backend)
+2023-01-18T20:40:48.745+05:30 DEBUG 13152 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-18T20:40:48.746+05:30  INFO 13152 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : The following 1 profile is active: "dev"
+2023-01-18T20:41:07.752+05:30  WARN 13152 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-18T20:41:08.144+05:30  INFO 13152 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Started EmployeePayrollAppBackendApplication in 20.96 seconds (process running for 32.711)
+2023-01-18T20:41:08.148+05:30  INFO 13152 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll App Started in DEV Environment
+2023-01-18T20:41:08.149+05:30  INFO 13152 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll DB User is root Environment
+2023-01-18T20:44:35.220+05:30  INFO 7876 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Starting EmployeePayrollAppBackendApplication using Java 18.0.2.1 with PID 7876 (E:\brglabz\CFP\Employee payroll app - backend\build\classes\java\main started by iliya in E:\brglabz\CFP\Employee payroll app - backend)
+2023-01-18T20:44:35.222+05:30 DEBUG 7876 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-18T20:44:35.223+05:30  INFO 7876 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : The following 1 profile is active: "dev"
+2023-01-18T20:44:39.332+05:30  WARN 7876 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-18T20:44:39.775+05:30  INFO 7876 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Started EmployeePayrollAppBackendApplication in 5.098 seconds (process running for 6.205)
+2023-01-18T20:44:39.780+05:30  INFO 7876 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll App Started in DEV Environment
+2023-01-18T20:44:39.783+05:30  INFO 7876 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll DB User is root Environment
+2023-01-18T20:50:41.764+05:30  INFO 11300 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Starting EmployeePayrollAppBackendApplication using Java 18.0.2.1 with PID 11300 (E:\brglabz\CFP\Employee payroll app - backend\build\classes\java\main started by iliya in E:\brglabz\CFP\Employee payroll app - backend)
+2023-01-18T20:50:41.774+05:30 DEBUG 11300 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-18T20:50:41.776+05:30  INFO 11300 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : The following 1 profile is active: "dev"
+2023-01-18T20:51:21.748+05:30  WARN 11300 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-18T20:51:23.498+05:30  INFO 11300 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Started EmployeePayrollAppBackendApplication in 42.325 seconds (process running for 43.183)
+2023-01-18T20:51:23.503+05:30  INFO 11300 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll App Started in DEV Environment
+2023-01-18T20:51:23.506+05:30  INFO 11300 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll DB User is root Environment
+2023-01-18T20:51:28.379+05:30 DEBUG 11300 --- [http-nio-8080-exec-1] c.e.Services.EmployeePayrollService      : EmployeePayrollData(employeeId=152, name=amit, salary=20000)
+2023-01-18T20:52:50.856+05:30 ERROR 11300 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
+
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143) ~[na:na]
+	at com.employeepayrollapp.Services.EmployeePayrollService.getEmployeePayrollById(EmployeePayrollService.java:31) ~[main/:na]
+	at com.employeepayrollapp.Controllers.EmployeePayrollController.getEmployeePayrollDataById(EmployeePayrollController.java:27) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1010) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:902) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705) ~[tomcat-embed-core-10.1.4.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:884) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814) ~[tomcat-embed-core-10.1.4.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
