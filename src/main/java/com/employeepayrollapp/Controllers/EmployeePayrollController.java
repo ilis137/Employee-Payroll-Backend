@@ -3,6 +3,7 @@ package com.employeepayrollapp.Controllers;
 
 import com.employeepayrollapp.DTO.EmployeePayrollDTO;
 import com.employeepayrollapp.DTO.ResponseDTO;
+import com.employeepayrollapp.Exceptions.EmployeePayrollNotFoundException;
 import com.employeepayrollapp.Models.EmployeePayrollData;
 import com.employeepayrollapp.Services.IEmployeePayrollService;
 import jakarta.validation.Valid;
@@ -25,7 +26,7 @@ public class EmployeePayrollController {
     }
 
     @GetMapping("/{empId}")
-    public ResponseEntity<ResponseDTO> getEmployeePayrollDataById(@PathVariable long empId){
+    public ResponseEntity<ResponseDTO> getEmployeePayrollDataById(@PathVariable long empId) throws EmployeePayrollNotFoundException {
         ResponseDTO response=new ResponseDTO("successfully fetched payroll data for employee id "+empId,employeePayrollService.getEmployeePayrollById(empId));
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
@@ -45,7 +46,7 @@ public class EmployeePayrollController {
     }
 
     @PutMapping ("/update/{empId}")
-    public ResponseEntity<ResponseDTO> updateEmployeePayrollData(@PathVariable long empId,@Valid @RequestBody  EmployeePayrollDTO empPayrollDTO){
+    public ResponseEntity<ResponseDTO> updateEmployeePayrollData(@PathVariable long empId,@Valid @RequestBody  EmployeePayrollDTO empPayrollDTO)  throws EmployeePayrollNotFoundException {
         ResponseDTO response=new ResponseDTO("successfully updated employee payroll data for employee id "+empId,employeePayrollService.updateEmployeePayrollById(empId,empPayrollDTO));
         return new ResponseEntity<>(response, HttpStatus.OK);
     }

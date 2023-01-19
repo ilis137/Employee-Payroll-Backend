@@ -620,3 +620,12 @@ com.employeepayrollapp.Exceptions.EmployeePayrollNotFoundException: Employee pay
 2023-01-19T17:47:56.553+05:30  INFO 6024 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll DB User is root Environment
 2023-01-19T17:48:04.903+05:30  WARN 6024 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.employeepayrollapp.Exceptions.EmployeePayrollNotFoundException: Employee payroll not found for employee id 50]
 2023-01-19T18:31:01.180+05:30  WARN 6024 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m5s947ms185µs900ns).
+2023-01-19T18:33:06.256+05:30  INFO 17676 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Starting EmployeePayrollAppBackendApplication using Java 18.0.2.1 with PID 17676 (E:\brglabz\CFP\Employee payroll app - backend\build\classes\java\main started by iliya in E:\brglabz\CFP\Employee payroll app - backend)
+2023-01-19T18:33:06.258+05:30 DEBUG 17676 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-19T18:33:06.259+05:30  INFO 17676 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : The following 1 profile is active: "dev"
+2023-01-19T18:33:35.809+05:30  WARN 17676 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-19T18:33:40.783+05:30  INFO 17676 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Started EmployeePayrollAppBackendApplication in 35.09 seconds (process running for 47.123)
+2023-01-19T18:33:40.787+05:30  INFO 17676 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll App Started in DEV Environment
+2023-01-19T18:33:40.789+05:30  INFO 17676 --- [restartedMain] c.e.EmployeePayrollAppBackendApplication : Employee Payroll DB User is root Environment
+2023-01-19T18:34:27.757+05:30  WARN 17676 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.employeepayrollapp.Exceptions.EmployeePayrollNotFoundException: Employee payroll not found for employee id 50]
+2023-01-19T18:34:41.537+05:30  WARN 17676 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.employeepayrollapp.Exceptions.EmployeePayrollNotFoundException: Employee payroll not found for employee id 50]

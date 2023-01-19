@@ -1,6 +1,7 @@
 package com.employeepayrollapp.Services;
 
 import com.employeepayrollapp.DTO.EmployeePayrollDTO;
+import com.employeepayrollapp.Exceptions.EmployeePayrollNotFoundException;
 import com.employeepayrollapp.Models.EmployeePayrollData;
 import com.employeepayrollapp.Repository.EmployeePayrollRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -13,7 +14,7 @@ import java.util.stream.Collectors;
 
 @Service
 @Slf4j
-public class EmployeePayrollService implements IEmployeePayrollService {
+public class EmployeePayrollService implements IEmployeePayrollService  {
     private static final ModelMapper modelMapper = new ModelMapper();
     @Autowired
     EmployeePayrollRepository employeePayrollRepository;
@@ -27,10 +28,14 @@ public class EmployeePayrollService implements IEmployeePayrollService {
     }
 
     @Override
-    public EmployeePayrollDTO getEmployeePayrollById(long empId) {
-        EmployeePayrollData employeePayrollData=employeePayrollRepository.findById(empId).get();
-        log.debug(String.valueOf(employeePayrollData));
-        return modelMapper.map(employeePayrollData, EmployeePayrollDTO.class);
+    public EmployeePayrollDTO getEmployeePayrollById(long empId) throws EmployeePayrollNotFoundException{
+
+            EmployeePayrollData employeePayrollData=employeePayrollRepository.findById(empId).orElseThrow(()->new EmployeePayrollNotFoundException("Employee payroll not found for employee id "+empId));
+            log.debug(String.valueOf(employeePayrollData));
+            return modelMapper.map(employeePayrollData, EmployeePayrollDTO.class);
+
+
+
     }
 
     @Override
@@ -41,12 +46,15 @@ public class EmployeePayrollService implements IEmployeePayrollService {
     }
 
     @Override
-    public EmployeePayrollDTO updateEmployeePayrollById(long empId, EmployeePayrollDTO employeePayrollDTO) {
-        EmployeePayrollData employeePayrollData=employeePayrollRepository.findById(empId).get();
-        employeePayrollData.setName(employeePayrollDTO.getName());
-        employeePayrollData.setSalary(employeePayrollDTO.getSalary());
-        employeePayrollData=employeePayrollRepository.save(employeePayrollData);
-        return modelMapper.map(employeePayrollData, EmployeePayrollDTO.class);
+    public EmployeePayrollDTO updateEmployeePayrollById(long empId, EmployeePayrollDTO employeePayrollDTO) throws EmployeePayrollNotFoundException{
+
+            EmployeePayrollData employeePayrollData=employeePayrollRepository.findById(empId).orElseThrow(()->new EmployeePayrollNotFoundException("Employee payroll not found for employee id "+empId));
+            employeePayrollData.setName(employeePayrollDTO.getName());
+            employeePayrollData.setSalary(employeePayrollDTO.getSalary());
+            employeePayrollData=employeePayrollRepository.save(employeePayrollData);
+            return modelMapper.map(employeePayrollData, EmployeePayrollDTO.class);
+
+
     }
 
     @Override

@@ -28,5 +28,9 @@ public class ApplicationExceptionHandler {
         return new ResponseEntity<>(responseDTO, HttpStatus.BAD_REQUEST);
     }
 
-
+    @ExceptionHandler(EmployeePayrollNotFoundException.class)
+    public ResponseEntity<ResponseDTO> handleEmployeePayrollNotFoundException(EmployeePayrollNotFoundException exception) {
+        ResponseDTO responseDTO = new ResponseDTO("Exception while processing Http Method Request", exception.getMessage());
+        return new ResponseEntity<>(responseDTO, HttpStatus.NOT_FOUND);
+    }
 }
