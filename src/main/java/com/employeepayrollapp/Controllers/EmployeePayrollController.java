@@ -11,6 +11,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+
 @RestController
 @RequestMapping("/employeepayrollservice")
 public class EmployeePayrollController {
@@ -30,7 +31,8 @@ public class EmployeePayrollController {
     }
 
     @PostMapping("/create")
-    public ResponseEntity<ResponseDTO> createEmployeePayroll(@RequestBody @Valid EmployeePayrollDTO empPayrollDTO){
+    public ResponseEntity<ResponseDTO> createEmployeePayroll(@Valid @RequestBody EmployeePayrollDTO empPayrollDTO){
+
         ResponseDTO response=new ResponseDTO("successfully created employee payroll data",employeePayrollService.createEmployeePayroll(empPayrollDTO));
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
@@ -43,7 +45,7 @@ public class EmployeePayrollController {
     }
 
     @PutMapping ("/update/{empId}")
-    public ResponseEntity<ResponseDTO> updateEmployeePayrollData(@PathVariable long empId,@RequestBody @Valid EmployeePayrollDTO empPayrollDTO){
+    public ResponseEntity<ResponseDTO> updateEmployeePayrollData(@PathVariable long empId,@Valid @RequestBody  EmployeePayrollDTO empPayrollDTO){
         ResponseDTO response=new ResponseDTO("successfully updated employee payroll data for employee id "+empId,employeePayrollService.updateEmployeePayrollById(empId,empPayrollDTO));
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
