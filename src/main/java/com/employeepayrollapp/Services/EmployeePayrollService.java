@@ -61,4 +61,16 @@ public class EmployeePayrollService implements IEmployeePayrollService {
     public void deleteEmployeePayrollById(long empId) {
         employeePayrollRepository.deleteById(empId);
     }
+
+    @Override
+    public List<EmployeePayrollDTO> getEmployeePayrollByDepartment(String department) throws EmployeePayrollNotFoundException{
+        try{
+            List<EmployeePayrollData> employeePayrollList = employeePayrollRepository.findEmployeePayrollByData(department);
+            List<EmployeePayrollDTO> employeePayrollDTOList = employeePayrollList.stream().map(empPayroll -> modelMapper.map(empPayroll, EmployeePayrollDTO.class)).collect(Collectors.toList());
+            return employeePayrollDTOList;
+        }catch(RuntimeException e){
+            throw new EmployeePayrollNotFoundException("employee payroll not found");
+        }
+
+    }
 }

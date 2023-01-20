@@ -50,4 +50,10 @@ public class EmployeePayrollController {
         ResponseDTO response=new ResponseDTO("successfully updated employee payroll data for employee id "+empId,employeePayrollService.updateEmployeePayrollById(empId,empPayrollDTO));
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
+
+    @GetMapping("department/{department}")
+    public ResponseEntity<ResponseDTO> getEmployeePayrollDataByDepartment(@PathVariable String department) throws EmployeePayrollNotFoundException{
+        ResponseDTO response=new ResponseDTO("successfully fetched payroll data by department "+department,employeePayrollService.getEmployeePayrollByDepartment(department));
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
 }

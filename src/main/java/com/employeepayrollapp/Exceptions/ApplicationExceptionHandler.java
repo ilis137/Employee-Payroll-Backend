@@ -41,7 +41,7 @@ public class ApplicationExceptionHandler {
     public ResponseEntity<ResponseDTO> handleHttpMessageNotReadableException(HttpMessageNotReadableException exception) {
         log.error("Invalid date format",exception);
         Map<String, String> errorMap = new HashMap<>();
-        errorMap.put("startDate","Should have a date in format of dd-MM-yyyy");
+        errorMap.put("startDate","Should have a date in format of dd MMM yyyy");
         ResponseDTO responseDTO = new ResponseDTO("Exception while processing Http Method Request",errorMap);
         return new ResponseEntity<>(responseDTO, HttpStatus.BAD_REQUEST);
     }
